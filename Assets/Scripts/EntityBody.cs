@@ -13,7 +13,7 @@ public class EntityBody : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         rb.constraints = RigidbodyConstraints.FreezeRotation;
         rb.useGravity = false;
-        gAttractor = (GravityAttractor) GameObject.FindGameObjectWithTag("planet").GetComponent<GravityAttractor>();
+        gAttractor = (GravityAttractor) GameObject.FindGameObjectWithTag("Planet").GetComponent<GravityAttractor>();
 	}
 	
 	// Update is called once per frame

@@ -65,6 +65,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: e7a7f9734636d415ca84ef3aaf7680f6
-  - enabled: 1
-    path: Assets/Scenes/Man.unity
+  - enabled: 0
+    path: 
     guid: 3e0ee01693ed2ae49a6290bb4fc05cdc
+  - enabled: 1
+    path: Assets/Scenes/RoundedCilinderMap.unity
+    guid: 42acc7a66de59544aad774c616610922
