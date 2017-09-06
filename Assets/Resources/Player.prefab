@@ -58,9 +58,11 @@ GameObject:
   - component: {fileID: 95216602009509390}
   - component: {fileID: 54110362326977574}
   - component: {fileID: 64887623837421068}
+  - component: {fileID: 114061366679628342}
   - component: {fileID: 114449478020453834}
   - component: {fileID: 114807641951217708}
   - component: {fileID: 114359798701561614}
+  - component: {fileID: 114972568810062716}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -122,7 +124,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e0b2b5e4a1f9e304ba4dd8543c29b865, type: 2}
+  - {fileID: 2100000, guid: 1ee9260226e99774b91abcaca1158755, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -247,6 +249,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114061366679628342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1835254664097042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6824463b388bd44a37de0c2a856148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plane: {fileID: 1702796829564886}
 --- !u!114 &114359798701561614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -298,3 +312,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 30
   rotateSpeed: 200
+  netPositionSpeed: 5
+  netRotationSpeed: 300
+--- !u!114 &114972568810062716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1835254664097042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  OwnerShipWasTransfered: 0
+  prefixBackup: -1
+  synchronization: 3
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 114807641951217708}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 0
+  instantiationId: -1
+  currentMasterID: -1
+  isRuntimeInstantiated: 0

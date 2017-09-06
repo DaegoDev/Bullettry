@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 114336059931707052}
   - component: {fileID: 114196945259725084}
   - component: {fileID: 114425255789543864}
+  - component: {fileID: 114305260194037940}
   m_Layer: 11
   m_Name: Bullet
   m_TagString: Untagged
@@ -143,6 +144,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 60
+--- !u!114 &114305260194037940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1578702478711810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  OwnerShipWasTransfered: 0
+  prefixBackup: -1
+  synchronization: 3
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 4661224200353366}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 0
+  instantiationId: -1
+  currentMasterID: -1
+  isRuntimeInstantiated: 0
 --- !u!114 &114336059931707052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -166,7 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a636411ad70b24b91bb2df498e8c3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 100
+  lifeTime: 10
 --- !u!135 &135920054689345886
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -15,7 +15,10 @@ public class BulletMovement : MonoBehaviour {
     
     void FixedUpdate()
     {
+
         moveDirection = transform.forward;
         rb.MovePosition(rb.position + moveDirection * moveSpeed * Time.deltaTime);
     }
+
+
 }

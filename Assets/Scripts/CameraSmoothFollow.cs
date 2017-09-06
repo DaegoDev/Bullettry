@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 public class CameraSmoothFollow : MonoBehaviour {
-    [SerializeField] private Transform target;    
+    public Transform target;    
     [SerializeField] private Vector3 offsetPosition;
     [SerializeField] private bool lookAt = true;
     [SerializeField] private Space offsetPositionSpace = Space.Self;
